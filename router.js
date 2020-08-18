@@ -1,5 +1,5 @@
 const express = require('express')
-
+// 路由多和复杂的时候需要单开一个文件夹routes来存放不同的js文件(路由)
 
 const router = express.Router()
 router.get('/',(req,res)=>{
