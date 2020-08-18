@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    {{block 'head'}}{{/block}}
+</head>
+<body>
+    {{include './header.html'}}
+    <!-- 公共的头部 -->
+    <!-- 留一个坑  将来留给孩子去填坑 -->
+    {{block 'content'}}<h1>moren</h1>{{/block}}
+    <!-- 公共的底部 -->
+    {{include './footer.html'}}
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    {{block 'script'}}{{/block}}
+</body>
+</html>
